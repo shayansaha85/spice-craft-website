@@ -1,0 +1,468 @@
+/* ==========================================================================
+   SPICE KRAFT — RESPONSIVE STYLESHEET (LIGHT FOODIE THEME)
+   Fluid adaptations from 320px smartphones to ultrawide displays
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. 1440px and below (Large Laptops & Desktops)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1440px) {
+  .container,
+  .section-header,
+  .philosophy-grid,
+  .dishes-grid,
+  .menu-categories-wrap,
+  .menu-legend,
+  .menu-items-grid,
+  .cocktails-grid,
+  .gallery-grid,
+  .reviews-slider-container,
+  .ambience-container,
+  .contact-grid {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  .navbar {
+    padding: 16px 36px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   2. 1024px and below (Tablets & Medium Screens)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .nav-links,
+  .nav-reserve-btn {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar {
+    padding: 14px 28px;
+  }
+
+  .navbar.scrolled {
+    padding: 12px 28px;
+  }
+
+  /* Intro Section */
+  .intro-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  /* Philosophy */
+  .philosophy-grid {
+    grid-template-columns: 1fr;
+    max-width: 580px;
+    margin: 0 auto;
+  }
+
+  /* Dishes */
+  .dishes-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .dish-featured {
+    grid-column: span 2;
+  }
+
+  /* Ambience */
+  .ambience-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .ambience-image-card img {
+    aspect-ratio: 16/10;
+  }
+
+  /* Experience */
+  .experience-grid {
+    grid-template-columns: 1fr;
+    max-width: 540px;
+    margin: 0 auto;
+  }
+
+  /* Cocktails */
+  .cocktails-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Gallery */
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  /* Contact */
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact-map-frame {
+    min-height: 400px;
+  }
+
+  .contact-map-frame iframe {
+    min-height: 400px;
+  }
+
+  /* Footer */
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. 768px and below (Mobile Landscape & Standard Smart Devices)
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  body.light-theme {
+    padding-bottom: 68px; /* Offset for floating bottom mobile action bar */
+  }
+
+  .section {
+    padding: 72px 0;
+  }
+
+  .container,
+  .section-header,
+  .philosophy-grid,
+  .dishes-grid,
+  .menu-categories-wrap,
+  .menu-legend,
+  .menu-items-grid,
+  .cocktails-grid,
+  .gallery-grid,
+  .reviews-slider-container,
+  .ambience-container,
+  .contact-grid {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* Floating Navbar */
+  .navbar {
+    padding: 12px 20px;
+  }
+
+  .navbar.scrolled {
+    padding: 10px 20px;
+  }
+
+  .brand-title {
+    font-size: 1.4rem;
+  }
+
+  .brand-sub {
+    font-size: 8px;
+    letter-spacing: 0.15em;
+  }
+
+  /* Hero Section */
+  .hero {
+    min-height: 100svh;
+    padding: 110px 0 60px;
+  }
+
+  .hero-badge {
+    font-size: 10px;
+    padding: 6px 16px;
+    margin-bottom: 18px;
+  }
+
+  .hero-title {
+    font-size: clamp(2.4rem, 8.5vw, 3.8rem);
+    line-height: 1.1;
+    margin-bottom: 18px;
+  }
+
+  .hero-subtitle {
+    font-size: 14px;
+    line-height: 1.65;
+    margin-bottom: 28px;
+  }
+
+  .hero-ctas {
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+
+  .hero-ctas .btn {
+    width: 100%;
+  }
+
+  .hero-proof-card {
+    padding: 10px 20px;
+    gap: 12px;
+  }
+
+  .bubble-score {
+    font-size: 1.2rem;
+  }
+
+  .hero-scroll {
+    display: none;
+  }
+
+  /* Intro Section */
+  .intro-heading {
+    font-size: clamp(2rem, 6.5vw, 2.8rem);
+  }
+
+  .intro-stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .stat-card {
+    padding: 18px 10px;
+  }
+
+  .stat-num {
+    font-size: 1.65rem;
+  }
+
+  .stat-label {
+    font-size: 10px;
+  }
+
+  /* Dishes Grid */
+  .dishes-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .dish-featured {
+    grid-column: span 1 !important;
+  }
+
+  .dish-thumb,
+  .dish-card:not(.dish-featured) .dish-thumb {
+    aspect-ratio: 16/10;
+  }
+
+  .dish-body {
+    padding: 22px 20px;
+  }
+
+  .dish-name {
+    font-size: 1.35rem;
+  }
+
+  /* Menu Grid */
+  .menu-categories {
+    gap: 8px;
+  }
+
+  .menu-category-btn {
+    padding: 8px 18px;
+    font-size: 11px;
+  }
+
+  .menu-items-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .menu-item {
+    padding: 20px;
+    gap: 14px;
+  }
+
+  .menu-item-name {
+    font-size: 1.2rem;
+  }
+
+  .menu-item-desc {
+    font-size: 12.5px;
+  }
+
+  /* Ambience Features */
+  .ambience-features-list {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  /* Cocktails */
+  .cocktails-grid {
+    grid-template-columns: 1fr;
+    max-width: 440px;
+    margin: 0 auto;
+    gap: 20px;
+  }
+
+  .cocktail-thumb {
+    aspect-ratio: 16/10;
+  }
+
+  /* Reviews */
+  .review-card {
+    min-width: 100%;
+    padding: 28px 20px;
+    margin: 0;
+  }
+
+  .review-text {
+    font-size: 1.15rem;
+  }
+
+  /* Reservation Banner */
+  .reservation-card {
+    padding: 44px 22px;
+  }
+
+  .reservation-heading {
+    font-size: clamp(2rem, 6vw, 2.8rem);
+  }
+
+  .reservation-buttons {
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .reservation-buttons .btn,
+  .reservation-buttons .btn-outline-call {
+    width: 100%;
+  }
+
+  /* Contact */
+  .contact-card-info {
+    padding: 32px 20px;
+  }
+
+  .contact-map-frame {
+    min-height: 340px;
+  }
+
+  .contact-map-frame iframe {
+    min-height: 340px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 60px 0 30px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 14px;
+    text-align: center;
+  }
+
+  /* Mobile Action Bar */
+  .mobile-action-bar {
+    display: flex;
+  }
+
+  /* Reservation Modal Responsive */
+  .modal-box {
+    padding: 32px 20px;
+    max-height: 90vh;
+  }
+
+  .modal-title {
+    font-size: 1.8rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .time-slots-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   4. 480px and below (Compact Smartphones)
+   -------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+  .container,
+  .section-header,
+  .philosophy-grid,
+  .dishes-grid,
+  .menu-categories-wrap,
+  .menu-legend,
+  .menu-items-grid,
+  .cocktails-grid,
+  .gallery-grid,
+  .reviews-slider-container,
+  .ambience-container,
+  .contact-grid {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .hero-title {
+    font-size: clamp(2.1rem, 9.5vw, 2.9rem);
+  }
+
+  .intro-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .gallery-card {
+    aspect-ratio: 16/10;
+  }
+
+  .time-slots-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .seating-options-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-legend {
+    gap: 8px;
+    font-size: 11px;
+  }
+
+  .conf-actions {
+    flex-direction: column;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   5. TOUCH & REDUCED MOTION SPECIFICS
+   -------------------------------------------------------------------------- */
+@media (hover: none) {
+  .cursor-dot,
+  .cursor-outline {
+    display: none !important;
+  }
+
+  * {
+    cursor: auto !important;
+  }
+}
